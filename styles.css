@@ -21,7 +21,7 @@ align-items: center;
 display: flex;
 align-items: center;
 justify-content: center;
-font-size: 20px;
+font-size: 18px;
 font-weight: bold;
 }
 
@@ -32,7 +32,6 @@ margin: 20px 10px;
 }
 
 .move-icon{
-height: 50px;
 background-color: white;
 width:50px;
 height:50px;
@@ -41,12 +40,15 @@ padding:8px;
 }
 
 .move-button{
+display:flex;
+justify-content: center;
+align-items: center;
 background-color: white;
 border: 3px solid white;
 width:120px;
 height:120px;
 border-radius: 60px;
-margin-right: 10px;
+margin:5px;
 cursor:pointer;
 }
 
@@ -69,7 +71,7 @@ font-size: 20px;
 }
 
 .player-move, .computer-move{
-font-size: 15px;
+font-size: 13px;
 }
 
 .player-move i, .computer-move i{
@@ -80,13 +82,13 @@ padding-right: 10px;
 
 .score{
 margin-top:20%;
+font-size:12px;
 }
 
 .buttons-container{
 display: grid;
 grid-template-columns: auto auto;
 column-gap: 20px;
-
 }
 
 .reset-score-button, .auto-play-button{
@@ -108,6 +110,7 @@ transition: background-color 0.4s, color 0.4s;
 
 @media screen and (min-width: 576px){
     .container{
+    padding-top: 5%;
     display:flex;
     align-items: center;
     justify-content: center;
