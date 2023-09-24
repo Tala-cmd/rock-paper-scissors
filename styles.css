@@ -1,10 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+*{
+box-sizing: border-box;
+}
+
 body{
 background-color: rgb(45, 44, 44);
 color:white;
-font-family:arial;
+font-family:"Press Start 2P", sans-serif;
 }
 
 .container{
+padding-top: 10%;
 display:flex;
 flex-direction: column;
 justify-content: center;
@@ -15,7 +21,7 @@ align-items: center;
 display: flex;
 align-items: center;
 justify-content: center;
-font-size: 30px;
+font-size: 20px;
 font-weight: bold;
 }
 
@@ -58,12 +64,12 @@ grid-template-rows: 1fr 1fr;
 display:grid;
 justify-content: center;
 align-items: center;
-font-size:40px;
 font-weight: bold;
+font-size: 20px;
 }
 
 .player-move, .computer-move{
-font-size: 20px;
+font-size: 15px;
 }
 
 .player-move i, .computer-move i{
@@ -73,13 +79,14 @@ padding-right: 10px;
 }
 
 .score{
-margin-top:30%;
+margin-top:20%;
 }
 
 .buttons-container{
 display: grid;
 grid-template-columns: auto auto;
 column-gap: 20px;
+
 }
 
 .reset-score-button, .auto-play-button{
@@ -87,7 +94,9 @@ background-color: white;
 border:none;
 font-size:15px;
 padding: 8px 15px;
+
 cursor:pointer;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .reset-score-button:hover, .auto-play-button:hover{
@@ -99,10 +108,53 @@ transition: background-color 0.4s, color 0.4s;
 
 @media screen and (min-width: 576px){
     .container{
-    border: solid 2px white;
     display:flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    max-height: 100vh;
+    }
+
+    .title{
+    font-size: 35px;
+    font-weight: bold;
+    }
+        
+    .move-icon{
+    width:80px;
+    height:80px;
+    padding:8px;
+    }
+        
+    .move-button{
+    width:150px;
+    height:150px;
+    border-radius: 100px;
+    }
+        
+    .move-button:hover{
+    border: 4px solid rgb(141, 2, 2);
+    }
+        
+    .results-container{
+    grid-template-rows: 0.3fr 0.7fr;
+    }
+
+    .result {
+    font-size:35px;
+    }
+        
+    .player-move, .computer-move{
+    font-size: 20px;
+    }
+        
+    .score{
+    margin-top:0%;
+    font-size: 16px;
+    }
+        
+    .reset-score-button, .auto-play-button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:20px;
+    padding: 8px 15px;
     }
 }
