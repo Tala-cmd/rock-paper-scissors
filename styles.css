@@ -1,5 +1,5 @@
 body{
-background-color: rgb(25,25,25);
+background-color: rgb(45, 44, 44);
 color:white;
 font-family:arial;
 }
@@ -44,17 +44,32 @@ margin-right: 10px;
 cursor:pointer;
 }
 
+.move-button:hover{
+border: 3px solid rgb(141, 2, 2);
+transition: border 0.4s;
+}
+
 .results-container{
 display: grid;
 grid-template-rows: 1fr 1fr;
 }
 
-.js-result {
+.result {
 display:grid;
 justify-content: center;
 align-items: center;
-font-size:25px;
+font-size:40px;
 font-weight: bold;
+}
+
+.player-move, .computer-move{
+font-size: 20px;
+}
+
+.player-move i, .computer-move i{
+display: inline-block; 
+vertical-align: -2px;
+padding-right: 10px;
 }
 
 .score{
@@ -73,6 +88,13 @@ border:none;
 font-size:15px;
 padding: 8px 15px;
 cursor:pointer;
+}
+
+.reset-score-button:hover, .auto-play-button:hover{
+color: white;
+background-color: rgb(45, 44, 44);
+border:2px solid white;
+transition: background-color 0.4s, color 0.4s;
 }
 
 @media screen and (min-width: 576px){
